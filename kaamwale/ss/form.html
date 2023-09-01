@@ -1,0 +1,118 @@
+<body>
+    <form onsubmit="return validateForm()">
+
+        <div class="form-group">
+            <input type="text" name="username" id="usernames" class="form-control" placeholder="Name">
+            <span id="usernameError" class="error text-danger usernameError"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" id="email" required class="form-control" placeholder="E-mail">
+            <span id="emailError" class="error text-danger emailError"></span>
+        </div>
+
+        <div class="form-group">
+            <span>Enter your birthdate</span>
+            <input type="date" name="date" id="date" required class="form-control" placeholder="Date">
+            <span id="dateError" class="error text-danger"></span>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="male">
+            <label class="form-check-label" for="exampleRadios1">
+                Male
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="female">
+            <label class="form-check-label" for="exampleRadios2">
+                Female
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="others">
+            <label class="form-check-label" for="exampleRadios3">
+                Others
+            </label>
+        </div>
+        <span id="radioError" class="error text-danger"></span>
+
+        <div class="form-group">
+            <input type="number" name="phone" id="conpassword" class="form-control" placeholder="Phone no.">
+            <span id="phoneError" class="error text-danger phoneError"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+        </div>
+
+        <div class="form-group">
+            <input type="reset" id="reset" value="reset" class="btn btn-primary">
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            const errorElements = document.getElementsByClassName('error');
+            for (const errorElement of errorElements) {
+                errorElement.textContent = '';
+            }
+
+            const username = document.getElementById('usernames').value;
+            const email = document.getElementById('email').value;
+            const radio = document.querySelector('input[name="exampleRadios"]:checked');
+            const phone = document.getElementById('conpassword').value;
+
+            let isValid = true;
+
+            if (username === '') {
+                document.getElementById('usernameError').innerText = 'Name is required';
+                isValid = false;
+            }
+
+            if (email === '') {
+                document.getElementById('emailError').innerText = 'E-mail is required';
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById('emailError').innerText = 'Enter a valid email address';
+                isValid = false;
+            }
+
+            if (radio === null) {
+                document.getElementById('radioError').innerText = 'Select the gender';
+                isValid = false;
+            }
+
+            if (phone === '') {
+                document.getElementById('phoneError').innerText = 'Phone number is required';
+                isValid = false;
+            } else if (!isValidPhone(phone)) {
+                document.getElementById('phoneError').innerText = 'Phone number must be 10 digits';
+                isValid = false;
+            }
+
+            if (isValid) {
+                console.log('Form data:');
+                console.log('Username:', username);
+                console.log('Email:', email);
+                console.log('Gender:', radio.value);
+                console.log('Phone:', phone);
+                alert('Form submitted successfully!');
+            }
+
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            // Basic email validation pattern
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+        function isValidPhone(phone) {
+            // Phone number validation pattern (exactly 10 digits)
+            const phonePattern = /^\d{10}$/;
+            return phonePattern.test(phone);
+        }
+    </script>
+</body>

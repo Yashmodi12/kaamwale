@@ -1,0 +1,36 @@
+.use h1 {
+    font-size: 60px;
+}
+
+.instruction .row {
+    width: 80%;
+}
+
+.center_bg .img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inst_start .row {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.main_logs .row {
+    width: 80%;
+}
+
+.logs {
+    margin-top: 20px;
+}
+
+.logs p {
+    padding-left: 12px;
+    text-transform: capitalize;
+}
+
+.log_img img {
+    width: 250px;
+    height: 500px;
+}

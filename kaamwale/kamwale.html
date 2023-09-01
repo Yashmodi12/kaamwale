@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaamWale</title>
+
+    <!-- bootsrtrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="kamwale.css">
+    <link rel="stylesheet" href="carousel.css">
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="wow.js" />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <div class="bg_img">
+
+        <header>    
+            <div class="container header_fix">
+                <div class="row ">
+                    <div class="row p-4 align-items-center head_row">
+                        <div class="col-md-6 col-sm-12 img-fluid ">
+                            <a href="#scroll" class="logo_img">
+                                <img src="kaamwale_logo-removebg-preview1.png">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a href="#scroll">
+                                <button type="button" class="btn head_btn">Contact Us</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="container ">
+            <div class="row mt-3 head_form">
+
+                <div class="col-md-7 col-sm-12 infos ">
+
+                    <h1 class="wow animate__animated animate__fadeInUp">Smart Solutions for Physical Home services</h1>
+                    <p class="wow animate__animated animate__fadeInUp">Trusted by over 4,50,000+ users
+                    </p>
+                </div>
+                <div class="col-md-5 col-sm-12 main_form wow animate__animated animate__fadeInRight">
+
+                    <form onsubmit="return validateForm()" id="scroll">
+                        <h3>Let's Start Here</h3>
+                        <div class="form-group">
+                            <input type="text" name="username" id="usernames" class="form-control" placeholder="Name">
+                            <span id="usernameError" class="error text-danger usernameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required class="form-control"
+                                placeholder="E-mail">
+                            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                Your email must be a valid email
+                            </small>
+                            <span id="emailError" class="error text-danger emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <input type="password" name="pass" id="password" class="form-control" placeholder="Service"> -->
+                            <select name="state1" class="state1 form-control">
+                                <option value="AP">-Services-</option>
+                                <option value="AR">car service</option>
+                                <option value="AS">cleaning service</option>
+                                <option value="BR">plumbing service</option>
+                                <option value="CT">ac service</option>
+                            </select>
+                            <span id="serviceError" class="error text-danger serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="phone" id="conpassword" class="form-control"
+                                placeholder="Phone no.">
+                            <span id="phoneError" class="error text-danger phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container ">
+        <div class="row ser_cen ">
+            <div class="col-sm-12 col-md-8 our_ser">
+                <h2 class="service_head wow animate__animated animate__fadeInUp"> Our Services</h2>
+                <p class="service_p wow animate__animated animate__fadeInUp">Say goodbye to household frustrations with
+                    our
+                    physical home services. From
+                    cleaning to plumbing and car wash solutions, our experts make maintaining your home a breeze.
+                    Contact us today to schedule your appointment!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 ser_btn">
+            <div>
+                <a href="#scroll">
+
+                    <button type="button" id="submitbtn" class="btn service_btn">Let's Talk</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container card-ser">
+        <div class="row">
+            <div class="col-sm-8 col-md-12 our_ser">
+                <h2 class="service_head wow animate__animated animate__fadeInUp"> Our Services</h2>
+                <p class="service_p mt-0 wow animate__animated animate__fadeInUp">How to use our Application</p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="row card_main row_mg">
+                    <div class="col-sm-12 col-md-6 col-lg-3 cards wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.2s">
+                        <div class="card_inner mt-3">
+                            <a href="caruse.html">
+                                <img src="pexels-sleepi-alleyne-1740919.jpg">
+                                <div class="cardtxt fadeIn-bottom">
+                                    <h4>
+                                        Car Cleaning
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 cards wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.4s">
+                        <div class="card_inner mt-3">
+                            <a href="acuse.html">
+                                <img src="ac-wash.jpg">
+                                <div class="cardtxt fadeIn-bottom">
+                                    <h4>
+                                        AC service
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 cards wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.6s">
+                        <div class="card_inner mt-3">
+                            <a href="cleanuse.html">
+                                <img src="pexels-tima-miroshnichenko-6197122.jpg">
+                                <div class="cardtxt fadeIn-bottom">
+                                    <h4>
+                                        Home Cleaning
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-3 cards wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.8s">
+                        <div class="card_inner mt-3">
+                            <a href="plumberuse.html">
+                                <img src="battlecreek-coffee-roasters-NfG4rXmceFM-unsplash.jpg">
+                                <div class="cardtxt fadeIn-bottom">
+                                    <h4>
+                                        plumber
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 ser_btn">
+            <a href="#scroll">
+                <button type="button" id="submitbtn" class="btn service_btn">Contact Us</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container tech">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 our_ser">
+                <h2 class="service_head wow animate__animated animate__fadeInUp"> Our Staff Support</h2>
+            </div>
+
+            <div class="col-sm-12 col-md-8 our_ser">
+                <p class="tech_para wow animate__animated animate__fadeInUp">
+                    We offer physical home services, including cleaning, plumbing, and car wash, to make maintaining
+                    your home easy and stress-free.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="increment mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 p-4 wow animate__animated animate__fadeInUp">
+                    <h1><span class="counter">2,523</span></h1>
+                    <h3>Clients year</h3>
+                </div>
+                <div class="col-md-3 p-4 wow animate__animated animate__fadeInUp">
+                    <h1><span class="counter">354</span></h1>
+                    <h3>people working</h3>
+                </div>
+                <div class="col-md-3 p-4 wow animate__animated animate__fadeInUp">
+                    <h1><span class="counter">700</span></h1>
+                    <h3>Happy customers</h3>
+                </div>
+                <div class="col-md-3 p-4 wow animate__animated animate__fadeInUp">
+                    <h1><span class="counter">3472</span></h1>
+                    <h3>completed projects</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dual">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6 help_bg d-none d-lg-block d-md-block"></div>
+                <div class="col-md-6 help_bg_1">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-10 dual_right">
+                            <h3 class="wow animate__animated animate__fadeInRight">Let us take the Physical Workload off
+                                your shoulders</h3>
+                            <a href="#scroll">
+                                <button type="button" id="submitbtn"
+                                    class="btn service_btn mt-0 wow animate__animated animate__fadeInRight">Contact
+                                    Us</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 our_ser">
+                    <h2 class="service_head"> FAQ </h2>
+                </div>
+
+                <div class="boxaccordion">
+                    <div class="containerwidth">
+                        <div class="wrapper">
+                            <button class="toggle"> What is included in a home cleaning service?<i
+                                    class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>The specifics can vary depending on the service, but a typical cleaning may include
+                                    dusting, vacuuming, sweeping, mopping, cleaning bathrooms and kitchens, and making
+                                    beds.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">Do I need to be home during the cleaning service?<i
+                                    class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>It's up to you! Many people prefer to be present during the first cleaning to show
+                                    the cleaner around and point out any specific areas they want to focus on, but after
+                                    that, you can choose to be home or not. Most cleaning services are happy to work
+                                    with your schedule and preferences.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">How long does a home cleaning service take?<i
+                                    class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p> Again, this can vary depending on the size of your home, the level of cleaning
+                                    required, and the number of cleaners working. Generally, a cleaning can take
+                                    anywhere from 1-4 hours.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What if I'm not satisfied with the cleaning?<i
+                                    class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p> Most reputable cleaning services will offer some sort of satisfaction guarantee or
+                                    will be willing to come back and fix any issues you have with the cleaning. Make
+                                    sure to clarify the policy with the service you choose.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">Do I need to provide cleaning supplies?<i
+                                    class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p> Our home physical services offer convenient and reliable solutions for all your home
+                                    maintenance needs. From car wash and plumbing to home cleaning, our expert
+                                    technicians deliver exceptional results. Sit back and relax while we take care of
+                                    the hard work. Book now for a hassle-free experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="foot_form" id="getintouch">
+
+        <div class="container">
+            <div class="row mt-3 head_form">
+
+                <div class="col-md-6 col-sm-12 infos foot_left p-4">
+                    <div class="row">
+                        <div class="col-md-11 col-lg-10 foot_txt">
+
+                            <h2 class="wow animate__animated animate__fadeInUp">Let’s Get Started</h2>
+                            <p class="wow animate__animated animate__fadeInUp">kaamWale home physical services offer
+                                convenient and reliable solutions for all your home
+                                maintenance needs. From car wash and plumbing to home cleaning, our expert technicians
+                                deliver exceptional results. Sit back and relax while we take care of the hard work.
+                                Book now for a hassle-free experience.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 main_form wow animate__animated animate__fadeInRight">
+
+
+                    <form onsubmit="return validateForm()">
+                        <h3>Let's Start Here</h3>
+                        <div class="form-group">
+                            <input type="text" name="username" id="usernames" class="form-control" placeholder="Name">
+                            <span id="usernameError" class="error text-danger usernameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required class="form-control"
+                                placeholder="E-mail">
+                            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                Your email must be a valid email
+                            </small>
+                            <span id="emailError" class="error text-danger emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <input type="password" name="pass" id="password" class="form-control" placeholder="Service"> -->
+                            <select name="state1" class="state1 form-control">
+                                <option value="AP">-Services-</option>
+                                <option value="AR">car service</option>
+                                <option value="AS">cleaning service</option>
+                                <option value="BR">plumbing service</option>
+                                <option value="CT">ac service</option>
+                            </select>
+                            <span id="serviceError" class="error text-danger serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="phone" id="conpassword" class="form-control"
+                                placeholder="Phone no.">
+                            <span id="phoneError" class="error text-danger phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container social_main">
+            <div class="row">
+                <ul>
+                    <a href="">
+                        <li><i class=" fa-brands fa-instagram fa-xl"></i></li>
+                    </a>
+                    <a href="">
+                        <li><i class=" fa-brands fa-square-facebook fa-xl"></i></li>
+                    </a>
+                    <a href="">
+                        <li><i class=" fa-brands fa-whatsapp fa-xl"></i></li>
+                    </a>
+                    <a href="">
+                        <li><i class=" fa-brands fa-square-twitter fa-xl"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer_x">
+        <div class="ft-copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            © Copyright 2020 - 2023, KaamWale. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- js file -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="kam.js"> </script>
+
+
+</body>
+
+
+</html>
